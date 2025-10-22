@@ -22,3 +22,6 @@ ax.legend()
 plt.show()
 
 for item2, item3 in zip(midterm, final):
+    result = item2 - item3
+    print(
+        f'With the midterm score{item2}, and final exam score {item3}, we get such a score as a difference: {result}')
