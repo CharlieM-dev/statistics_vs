@@ -25,3 +25,15 @@ for item2, item3 in zip(midterm, final):
     result = item2 - item3
     print(
         f'With the midterm score{item2}, and final exam score {item3}, we get such a score as a difference: {result}')
+
+
+for m, f in zip(midterm, final):
+    result = f - m
+    print(f'Midterm: {midterm}. Final: {final}. Difference: {result}')
+
+improved = []
+for n, m, f in zip(names, midterm, final):
+    if f > m:
+        improved.append(names)
+
+print(f"\nStudents who improved their scores: {improved}")
