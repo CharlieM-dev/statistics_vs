@@ -6,6 +6,7 @@
 # aluminium = 6 symbols
 import matplotlib.pyplot as plt
 
+values_of_recycling = []
 num_symbols = [8, 2, 4, 6]
 types_of_recycling = ['Paper', 'Glass', 'Plastic', 'Aluminium']
 symbol = '♻️'
@@ -39,3 +40,17 @@ ax.set_title('The recycling amounts', fontsize=16,
 
 plt.tight_layout()  # ensures title and symbols don't overlap
 plt.show()
+
+scale = 3
+
+for i in num_symbols:
+    kg = i * scale
+    values_of_recycling.append(kg)
+
+print(f'The amount of kilograms of recycling is: {values_of_recycling}')
+# The qustions itself is:
+
+# How many kilograms of recycling have been brought to the drive in all?
+total_kilograms = sum(values_of_recycling)
+print(
+    f'The total amount of kilograms of recycling that have been brought to the drive is: {total_kilograms}')
